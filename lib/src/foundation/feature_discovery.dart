@@ -11,10 +11,12 @@ import 'persistence_provider.dart';
 ///    Make sure to test this for every overlay because the trivial positioning can fail sometimes.
 ///  * [above], which will layout the content above the tap target.
 ///  * [below], which will layout the content below the tap target.
+///  * [right], which will layout the content to the right of the tap target.
 enum ContentLocation {
   above,
   below,
   trivial,
+  right,
 }
 
 class FeatureDiscovery extends StatelessWidget {

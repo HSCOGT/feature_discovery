@@ -478,6 +478,10 @@ class _DescribedFeatureOverlayState extends State<DescribedFeatureOverlay>
           break;
         case ContentLocation.trivial:
           throw ArgumentError.value(contentLocation);
+        case ContentLocation.right:
+          endingBackgroundPosition =
+              Offset(width / 2.0, anchor.dy + (width / 4.0));
+          break;
       }
 
       switch (_state) {
